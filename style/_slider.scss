@@ -1,0 +1,161 @@
+.swiper {
+    width: 100%;
+    margin: 15px auto;
+    max-width: 1000px;
+
+   .swiper-wrapper{ 
+       height: 100% !important;
+       
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff; 
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+       width: 300px !important;  
+       margin-left: 10px;
+      z-index: 9999; 
+      box-sizing: border-box; 
+
+       .main-slider-box {
+          width: 100%;
+          height: 450px;
+          box-shadow: 2px 3px 10px rgba(236, 85, 241, 0.76);
+          border: 2px solid #ff0000c2;
+          position: relative;
+          overflow: hidden;
+         .main-slider-overlay {
+          position: absolute;
+          @include WidthHeigth();
+          top: 100%;
+          background-color: rgba(163, 55, 55, 0.6);
+          @include flexCenter();
+          color: #fff;
+          transition: all ease 0.4s;
+               
+          i {
+          font-size: 3rem; 
+          cursor: pointer; 
+          z-index: 999; 
+          color: #00d5ff;
+              
+           &:hover{ 
+              color: #002aff;
+           }
+          } 
+         }
+        &:hover .main-slider-overlay {
+              top: 0px;
+           transition: all ease 0.4s;
+         } 
+
+          
+        .main-slider-img {
+          @include WidthHeigth();
+             img{
+              @include WidthHeigth();
+              object-fit: cover;
+              object-position: center;
+           } 
+          } 
+   
+         .main-slider-text {
+           position: absolute;
+           left: 0px;
+           top: 0px;
+           @include WidthHeigth();
+           background: linear-gradient(360deg,#161616b9 35%, rgba(73, 73, 73, 0.23) 64%);
+           @include flexClmnStrt ();
+           justify-content: space-between;
+           padding: 25px;
+             .quality {
+             display: flex;
+             justify-content: center;
+             letter-spacing: 0.5px;
+             font-family: merienda; 
+             font-weight: 600;
+             padding: 0px 5px;
+             height: 25px;
+             background-color: #f9f9f9;
+             color: #000000;
+                 }
+            .movie-name { 
+               @include flexClmnStrt ();
+               font-family: merienda; 
+
+                 span {
+                 text-align: center; 
+                 font-size: 1rem;
+                 letter-spacing: 1px;
+                 font-weight:900;
+                 color: rgba(240, 240, 240, 0.82);                      
+                }
+                strong {
+                font-size: 1.2rem;
+                font-weight: 500;
+                letter-spacing: 0.5px;  
+                font-family: merienda; 
+                line-height: 20px;
+                margin-top: 10px;
+                      color: #ffffff;
+                    }
+                   }  
+                    
+            .category-rating { 
+              display: flex;
+               justify-content: space-between;
+               width: 100%;
+              margin-top: 15px;
+             
+                  .category {
+                  color: #969696;
+                  font-size: 0.8rem;
+                  font-weight: 500; 
+                  font-family: creep;
+                      
+                  a {
+                        color: #e70634;
+                    margin: 0px 3px;
+                   } 
+                  } 
+            .rating {
+             font-size: 0.8rem;
+             color: #fff;
+             letter-spacing: 1px;  
+             text-align: end; 
+             
+                         
+               img{  
+                height: 15px;
+               object-fit: contain;
+                object-position: center;
+               width: 45%;   
+               widows: 22px;
+     
+              } 
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//.........slider navigation 
+  .swiper-button-next,
+  .swiper-button-prev { 
+      margin-top: 100px;
+
+  }
+  

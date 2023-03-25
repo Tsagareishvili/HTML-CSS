@@ -1,0 +1,161 @@
+.navigation {
+   @include flexCenter();
+    padding: 30px 50px;
+    max-width: 1400px;
+    margin: auto;
+    width: 100%; 
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;   
+    height: 15vh; 
+    margin-bottom: 100px;
+
+      .menu-icon {
+       cursor: pointer;
+       float: right;
+       padding: 20px 10px;
+       z-index: 103;
+
+          .nav-icon {
+           background-color: #fff;
+           display: block;
+           height: 2px;
+           width: 25px;
+           position: relative;
+           transition: background 0.3s ease-out;
+         
+              &::before, &::after{  
+              background-color: #ffffffcc;
+              content: "";
+              position: absolute;
+              display: block;
+             @include WidthHeigth();
+              transition: all ease-out 0.3s;
+             } 
+             &::before{ 
+                    top: 8px;
+             } 
+             &::after{ 
+                    top: -8px;
+             }
+         }
+          
+
+       
+     }
+  }
+  
+  
+ 
+  /* menu bar rotation */
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon {
+    background-color: transparent;
+  }
+  
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+  
+  .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  //.............logo.................
+  .logo {
+    color: #07eeff;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0px auto 0px 40px;
+    display: flex;
+    align-items: center;
+    font-family: merienda;
+    letter-spacing: 1px;
+       
+     span {
+     font-size: 0.7rem;
+     margin-left: 5px;
+     font-weight: 700px;
+     letter-spacing: 2px;
+   }
+
+}
+  
+  
+  
+//.........Search box..................
+  
+  .search-box {
+    background-color: #d1d1d111;
+    padding: 3px 20px;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+
+       input {
+        @include transparentBorder();
+         color: rgb(0, 251, 255);
+         font-family: merienda;
+      
+          &::placeholder {
+          color: #17bedb91;
+           font-family: merienda;
+           }
+        }
+
+      button {
+        @include transparentBorder();
+      color: #ffffffc9;
+      cursor: pointer;
+     }
+     
+     .bi-heart{ 
+      color: #07eeff;
+    } 
+}
+  
+  
+   //...............menu..............
+   .menu-btn {
+     display: none;  
+      
+      &:checked ~ .menu {
+        display: flex;
+      }
+
+
+  }
+  
+  .menu {
+    position: fixed;
+    left: 0px;
+    top: 0;
+    @include WidthHeigth();
+    background-color: #111111f1;
+    z-index: 102;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: fade 1.3s;
+    transition: all ease-out 1.3s;
+      
+      li a {
+       color: #fff;
+       margin: 0px 40px;
+       font-size: 2rem;
+       font-family: rubik;
+       transition: all ease 0.3s; 
+
+       &:hover {
+       font-size: 2.3rem;
+       color: #060ee7;
+        transition: all ease 0.5s;
+       }
+     }   
+  
+
+}
+
+  
