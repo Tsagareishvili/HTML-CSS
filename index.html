@@ -1,72 +1,298 @@
-<!DOCTYPE html
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my life </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/> 
+    <link rel="stylesheet" href="style/style.css">
+    <title>Movie Site</title> 
+    <link rel="icon" href="./Images/Movie-No-Background.png">
 </head>
-<body>
-
-<style>
-
-</style>
-    <img src="./image/bubu.jpg" alt="bubu" width="300px">
-    <a href="https://dogsbestlife.com/dog-breeds/black-ge/" style="color: rgb(0, 0, 0); font-size: 30px; text-decoration: none;" target="_blank">bubu</a>
-    <h1>bubu</h1>
-    <p>hello, this is my dog bubu, he is  4 years old, bubu is a german avchalka. </p>
-
-
-    
-    <p style="color: rgb(255, 0, 0);">ბუბუს შესახებ</p>
-    <ol style="color: blue;">
-         <li>ძლიერი</li>
-         <li style="color:green;">მამაცი</li>
-         <li>ჭკვიანი</li>
-    </ol>
-
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</3li>
-    </ul>
+<body> 
+    <nav class="navigation">
+        <!-- menu button -->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label>
+  
+        <!-- logo -->
+        <a href="index.html" class="logo">Movies</a>
         
+        <!-- menu -->
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Genre</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+  
+        <!-- search box -->
+        <form action="" class="search-box">
+          <!-- search input -->
+          <input
+            type="text"
+            name="search"
+            placeholder="Search Movie"
+            class="seach-input"
+            required
+          />
+          <!-- button -->
+          <button type="submit"> 
+            <!-- <i class="fas fa-search"></i>  -->
+            <i class="bi bi-heart bi-search-heart-fill"></i> 
+          </button>
+        </form>
+      </nav>  
+ 
+      
+<div #swiperRef="" class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"> 
+      <div class="main-slider-box">
+          <a href="" class="main-slider-overlay">
+             <i class="bi bi-play-fill"></i>
+          </a>
+      
+          <div class="main-slider-img">
+             <img src="images/post-13.jpg" alt="Insidious Poster" />
+          </div>
+                
+          <div class="main-slider-text">
+            <span class="quality">Full HD</span>
+              <div class="bottom-text">
+                <div class="movie-name">
+                   <span>2022</span>
+                   <strong>Marvel: Doctor Strange in the Multiverse of Madness</strong>
+                </div>
+                        <!-- category and rating -->
+                <div class="category-rating">
+
+                  <div class="category">
+                    <a href="#">Action</a>, <a href="#">/Adventure</a>,
+                  </div>
+
+                 <div class="rating">
+                    7.3 <img src="Images/IMDb-icon.png" alt="imdb" />
+                  </div>
+
+              </div>
+
+             </div>
+           </div>
+        </div>
+             
+      </div>
+        <div class="swiper-slide"> 
+      
+            <div class="main-slider-box">
+              <!-- overlay -->
+              <a href="#" class="main-slider-overlay">
+                <!-- <i class="fas fa-play"></i> --> 
+                <i class="bi bi-play-fill"></i>
+              </a>
+              <!-- slider images -->
+              <div class="main-slider-img">
+                <img src="images/post-14.jpg" alt="Insidious Poster" />
+              </div>
+              <!-- text -->
+              <div class="main-slider-text">
+                <!-- quality -->
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <!-- name -->
+                  <div class="movie-name">
+                    <span>2021</span>
+                    <strong>Marvel: Spider-Man: No Way Home</strong>
+                  </div>
+                  <!-- category and rating -->
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action</a>, <a href="#">Adventure</a>,
+                    </div>
     
-
-
-
- <img src="image/314340542_868134217526393_123649278139413961_n.jpg" alt="levani" width="300px">
-<h1>levani</h1>
-<p>hello i m levani, i m 11 years old. i like video games ike roblox minecraft and more. i m interested in programing english . so i m funny child(:</p>
-
-<img src="image/vaska.jpg" alt="donvaska" width="300px">
-<h1>donvaska</h1>
-<p>this is my dog, he is 1 years old, he is very ungry boy and lovely </p>
-
-<img src="image/hii.jpg" alt="donvaska's best friend" width="300px">
-<h1>donvaska's best friend</h1>
-<p>hello the white dog is donvaska's best friend he every day coming to my home yard, here is a photo </p>
-<img src="image/ddd.jpg" alt="donvaska" width="300px">
-
-
-
-
-
-
-
-
-
-
-
+                    <!-- rating -->
+                    <div class="rating">
+                     8.3 <img src="images/IMDb-icon.png" alt="imdb" />
+                    </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide"> 
 
       
+            <div class="main-slider-box">
+              <!-- overlay -->
+              <a href="#" class="main-slider-overlay">
+                <!-- <i class="fas fa-play"></i>  -->
+                <i class="bi bi-play-fill"></i>
+              </a>
+              <!-- slider images -->
+              <div class="main-slider-img">
+                <img src="images/post-2.jpg" alt="Insidious Poster" />
+              </div>
+              <!-- text -->
+              <div class="main-slider-text">
+                <!-- quality -->
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <!-- name -->
+                  <div class="movie-name">
+                    <span>2021</span>
+                    <strong>Amazon: The Tomorrow War</strong>
+                  </div>
+                  <!-- category and rating -->
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action</a>, <a href="#">Sci-fi</a>,
+                     
+                    </div>
+    
+                    <!-- rating -->
+                    <div class="rating">
+                      6.5 <img src="images/IMDb-icon.png" alt="imdb" />
+                    </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
 
- 
+        <div class="swiper-slide"> 
+   
+            <div class="main-slider-box">
+              <!-- overlay -->
+              <a href="#" class="main-slider-overlay">
+                <!-- <i class="fas fa-play"></i> --> 
+                <i class="bi bi-play-fill"></i>
+              </a>
+              <!-- slider images -->
+              <div class="main-slider-img">
+                <img src="images/p-4.jpg" alt="Insidious Poster" />
+              </div>
+              <!-- text -->
+              <div class="main-slider-text">
+                <!-- quality -->
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <!-- name -->
+                  <div class="movie-name">
+                    <span>2018</span>
+                    <strong>Marvel Comics: Venom</strong>
+                  </div>
+                  <!-- category and rating -->
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">horror</a>, <a href="#">Action</a>,
+                      <a href="#">Sci-fi</a>
+                    </div>
+    
+                    <!-- rating -->
+                    <div class="rating">
+                      6.6 <img src="images/IMDb-icon.png" alt="imdb" />
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+
+        <div class="swiper-slide">
+   
+            <div class="main-slider-box">
+              <!-- overlay -->
+              <a href="#" class="main-slider-overlay">
+                <!-- <i class="fas fa-play"></i> --> 
+                <i class="bi bi-play-fill"></i>
+              </a>
+              <!-- slider images -->
+              <div class="main-slider-img">
+                <img src="images/p-5.jpg" alt="Insidious Poster" />
+              </div>
+              <!-- text -->
+              <div class="main-slider-text">
+                <!-- quality -->
+                <span class="quality">Full HD</span>
+                <div class="bottom-text">
+                  <!-- name -->
+                  <div class="movie-name">
+                    <span>2016</span>
+                    <strong>Marvel Comics: DeadPool</strong>
+                  </div>
+                  <!-- category and rating -->
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action</a>, <a href="#">Adventure</a>
+                     
+                    </div>
+                    <!-- rating -->
+                    <div class="rating">
+                      8 <img src="images/IMDb-icon.png" alt="imdb" />
+                    </div>
+                  </div>
+           
+              </div>
+            </div>
+          </div>
+
+        </div> 
+        <div class="swiper-slide">
+         
+            <div class="main-slider-box">
+              <!-- overlay -->
+              <a href="#" class="main-slider-overlay">
+                <!-- <i class="fas fa-play"></i> --> 
+                <i class="bi bi-play-fill"></i>
+              </a>
+              <!-- slider images -->
+              <div class="main-slider-img">
+                <img src="images/p-6.jpg" alt="Insidious Poster" />
+              </div>
+              <!-- text -->
+              <div class="main-slider-text">
+                <!-- quality -->
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                  <!-- name -->
+                  <div class="movie-name">
+                    <span>2021</span>
+                    <strong>Marvel Comics: Black Widow</strong>
+                  </div>
+              
+                  <div class="category-rating">
+                    <div class="category">
+                      <a href="#">Action</a>, <a href="#">Adventure</a>
+                     
+                    </div>
+                    <div class="rating">
+                      6.7 <img src="images/IMDb-icon.png" alt="imdb" />
+                    </div>
+                  </div>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+   
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="main.js"></script> 
 </body>
 </html>
-
-
-
-
-
-
